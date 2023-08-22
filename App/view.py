@@ -77,6 +77,11 @@ def loadBooksTags(control):
     Cargar los Tags de libros
     """
     # TODO: Mods de Est-1 en el Lab 2
+    booktags = controller.loadBooksTags(control,
+                                                "GoodReads/book_tags-small.csv")
+    return booktags
+    first = firstBook(control)
+    print("Primer libro cargado:\n" + str(first) + "\n")
     pass
 
 
@@ -85,6 +90,9 @@ def firstBook(control):
     Devuelve el primer libro del catalogo
     """
     # TODO: Mods de Est-1 en el Lab 2
+    first = controller.firstBook(control)
+    return first
+
     pass
 
 
